@@ -87,7 +87,7 @@ const SignUpForm = ({ onShowLogin }: SignUpFormProps) => {
         </div>
         <Form {...form}>
           <form className="space-y-6" onSubmit={form.handleSubmit(handleSubmit)}>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               <FormField
                 control={form.control}
                 name="firstname"
@@ -253,7 +253,7 @@ const SignUpForm = ({ onShowLogin }: SignUpFormProps) => {
                 <span>Create Account</span>
               )}
             </Button>
-            <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center justify-center text-sm">
               <button
                 type="button"
                 onClick={onShowLogin}
